@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>通用权限管理系统</title>
+    <link th:href="@{/easyui/themes/default/easyui.css}" rel="stylesheet"/>
+    <link th:href="@{/easyui/themes/icon.css}" rel="stylesheet"/>
+    <link th:href="@{/css/login.css}" rel="stylesheet"/>
+    <link th:href="@{/css/myicon.css}" rel="stylesheet"/>
+</head>
+<body>
+<div id="title">通用权限管理系统</div>
+<div id="loginWin" class="easyui-window" title="登录" style="width:300px;height:200px;padding:5px;"
+     minimizable="false" maximizable="false" closable="false" draggable="false" resizable="false" collapsible="false">
+    <div class="easyui-layout" fit="true">
+        <div region="center" border="false" style="padding:5px;background:#fff;border:1px solid #ccc;">
+            <form id="loginForm" method="post">
+                <div style="padding:5px 0;">
+                    <label for="username">账号：</label>
+                    <input type="text" id="username" name="username" style="width:200px;"
+                           class="easyui-textbox" data-options="prompt:'请输入账号'"/>
+                </div>
+                <div style="padding:5px 0;">
+                    <label for="password">密码：</label>
+                    <input type="password" id="password" name="password" style="width:200px;"
+                           class="easyui-textbox" data-options="prompt:'请输入密码'"/>
+                </div>
+            </form>
+        </div>
+        <div region="south" border="false" style="text-align:right;padding:5px 0;">
+            <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon icon-users" onclick="login()">提交</a>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" th:src="@{/easyui/jquery.min.js}"></script>
+<script type="text/javascript" th:src="@{/easyui/jquery.easyui.min.js}"></script>
+<script type="text/javascript" th:src="@{/easyui/locale/easyui-lang-zh_CN.js}"></script>
+<script type="text/javascript" th:src="@{/biz/login.js}"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+* {
+    font-size: 14px;
+    font-family: Tahoma, Verdana, 微软雅黑, 新宋体
+}
+
+body {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+    z-index: -10;
+    zoom: 1;
+    background-color: #0E2D5F;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center 0;
+}
+
+a {
+    color: Black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: Red;
+    text-decoration: none;
+}
+
+#title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    font-size: 36px;
+    color: #ff9900;
+    margin-top: 200px;
+}
